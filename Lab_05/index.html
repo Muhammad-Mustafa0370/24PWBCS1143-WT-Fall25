@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lab05 —24PWBCS1143</title>
+
+  <!-- Core styles -->
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/display.css" />
+  <link rel="stylesheet" href="styles/float.css" />
+  <link rel="stylesheet" href="styles/flexbox.css" />
+  <link rel="stylesheet" href="styles/grid.css" />
+  <link rel="stylesheet" href="styles/media-queries.css" />
+  <link rel="stylesheet" href="styles/utilities.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Lab05 —24PWBCS1143</h1>
+    <p class="subtitle">Display • Float • Positioning • Flexbox • Grid • Media queries</p>
+  </header>
+
+  <main>
+    <!-- DISPLAY demo -->
+    <section id="display-demo" class="card">
+      <h2>Display property</h2>
+      <p>Block element: <div class="demo-block">I am a &lt;div&gt; (display:block)</div></p>
+      <p>Inline element: <span class="demo-inline">I am a &lt;span&gt; (display:inline)</span> text continues here.</p>
+      <p>Inline-block elements:
+        <span class="inline-block">inline-block 1</span>
+        <span class="inline-block">inline-block 2</span>
+      </p>
+    </section>
+
+    <!-- FLOAT demo -->
+    <section id="float-demo" class="card">
+      <h2>Float magazine-style snippet</h2>
+      <img src="https://via.placeholder.com/300x200?text=Sample+Image" alt="Placeholder Image">
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Text wraps around the floated image.
+      </p>
+      <div class="clearfix"></div>
+    </section>
+
+    <!-- FLEXBOX demo -->
+    <section id="flex-demo" class="card">
+      <h2>Flexbox — responsive card row</h2>
+      <div class="card-row">
+        <article class="card-item">
+          <h3>Card 1</h3>
+          <p>Some content.</p>
+          <div class="card-actions"> <button>Action</button> </div>
+        </article>
+        <article class="card-item">
+          <h3>Card 2 (taller)</h3>
+          <p>Longer content to show equal height behavior.</p>
+          <p>Extra line</p>
+          <div class="card-actions"> <button>Action</button> </div>
+        </article>
+        <article class="card-item">
+          <h3>Card 3</h3>
+          <p>Some content.</p>
+          <div class="card-actions"> <button>Action</button> </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- GRID demo -->
+    <section id="grid-demo" class="card">
+      <h2>CSS Grid — photo gallery</h2>
+      <div class="photo-grid">
+        <div class="photo">1</div>
+        <div class="photo">2</div>
+        <div class="photo">3</div>
+        <div class="photo">4</div>
+        <div class="photo">5</div>
+        <div class="photo">6</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>CS 224L — Web Technologies — Lab 05</small>
+  </footer>
+</body>
+</html>

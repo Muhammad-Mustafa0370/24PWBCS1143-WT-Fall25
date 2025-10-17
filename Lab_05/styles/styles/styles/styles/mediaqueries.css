@@ -1,0 +1,20 @@
+/* media-queries.css — mobile-first breakpoints */
+
+/* Base (mobile) — already handled in base.css */
+
+/* Tablet */
+@media (min-width: 768px) {
+  .site-header h1 { font-size:1.5rem; }
+  .card-row { gap:1.25rem; }
+}
+
+/* Small Desktop */
+@media (min-width: 1024px) {
+  main { padding:2rem; }
+  .photo-grid { gap:16px; }
+}
+
+/* Large Desktop */
+@media (min-width: 1200px) {
+  .photo-grid { grid-template-columns: repeat(4, 1fr); }
+}

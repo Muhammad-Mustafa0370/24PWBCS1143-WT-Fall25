@@ -1,0 +1,5 @@
+/* flexbox.css — container & items */
+.card-row { display:flex; gap:1rem; flex-wrap:wrap; align-items:stretch; }
+.card-item { flex:1 1 220px; background:#fff; padding:1rem; border:1px solid #eee; display:flex; flex-direction:column; }
+.card-item h3 { margin-top:0; }
+.card-actions { margin-top:auto; } /* pushes actions to bottom — equal height cards */

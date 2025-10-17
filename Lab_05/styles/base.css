@@ -1,0 +1,11 @@
+/* base.css — reset and base typographic rules */
+* { box-sizing: border-box; }
+html,body { height:100%; margin:0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color:#222; background:#f7f7f8; }
+a { color:inherit; }
+.site-header { background:#fff; padding:1rem 1.25rem; border-bottom:1px solid #e6e6e6; }
+.site-header h1 { margin:0; font-size:1.25rem; }
+.subtitle { margin:0.25rem 0 0; color:#1b1818; font-size:.9rem; }
+
+main { padding:1.25rem; max-width:1100px; margin:0 auto; }
+.card { background:#fff; padding:1rem; margin:1rem 0; border-radius:8px; box-shadow:0 1px 0 rgba(0,0,0,.04); }
+.site-footer { text-align:center; padding:1rem; color:#888; font-size:.85rem; }

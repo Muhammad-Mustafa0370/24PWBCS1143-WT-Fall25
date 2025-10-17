@@ -1,0 +1,13 @@
+/* display.css — demonstration of display values */
+.demo-block { display:block; padding:6px; background:#eef; margin-top:6px; }
+.demo-inline { display:inline; padding:3px; background:#fee; }
+.inline-block { display:inline-block; padding:6px 10px; margin:4px; border:1px solid #ddd; vertical-align:middle; }
+
+/* hide vs visibility */
+.hidden { display:none; }
+.invisible { visibility:hidden; }
+
+/* display:table demo */
+.table-like { display:table; width:100%; }
+.table-row { display:table-row; }
+.table-cell { display:table-cell; padding:8px; border:1px solid #eee; }

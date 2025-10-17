@@ -1,0 +1,11 @@
+/* utilities.css — small helpers */
+.u-hide-sm { display:none; }
+@media (min-width:768px){ .u-hide-sm { display:inline-block; } }
+
+.text-center { text-align:center; }
+.m-0 { margin:0; }
+.p-0 { padding:0; }
+
+/* spacing helpers (expand as needed for lab tasks) */
+.mt-1 { margin-top: .5rem; }
+.mb-1 { margin-bottom: .5rem; }
