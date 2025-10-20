@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Background Gallery</title>
+  <link rel="stylesheet" href="../styles/main.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9fafb;
+      color: #222;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #0ea5a4;
+      margin-bottom: 28px;
+    }
+
+    .section {
+      margin-bottom: 20px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .solid {
+      background-image: linear-gradient(rgba(14,165,164,0.85), rgba(14,165,164,0.85)),
+        url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80');
+      color: white;
+      padding: 24px;
+      text-align: center;
+    }
+
+    .bg-image {
+      background-image: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=800&q=80');
+      background-size: cover;
+      height: 240px;
+    }
+
+    .multi {
+      background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+        url('https://images.unsplash.com/photo-1529088741900-2b2359a5d3d5?auto=format&fit=crop&w=800&q=80');
+      color: white;
+      height: 220px;
+      padding: 20px;
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .radial {
+      background-image: radial-gradient(circle at 20% 30%, rgba(255,237,213,0.85), rgba(254,226,226,0.9)),
+        url('https://images.unsplash.com/photo-1526403227022-3b45b46dcd56?auto=format&fit=crop&w=800&q=80');
+      background-size: cover;
+      padding: 24px;
+      text-align: center;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Background Gallery</h1>
+    <div class="section solid">Solid Color Background with Overlay</div>
+    <div class="section bg-image"></div>
+    <div class="section multi">Multi-Layer Background Example</div>
+    <div class="section radial">Soft Radial Gradient with Image</div>
+  </main>
+</body>
+</html>

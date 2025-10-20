@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Selectors Lab</title>
+  <link rel="stylesheet" href="../styles/main.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1533000971541-8c8f3b2a88a0?auto=format&fit=crop&w=1200&q=80');
+      background-size: cover;
+      background-attachment: fixed;
+      padding: 20px;
+      color: #222;
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 20px 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      backdrop-filter: blur(5px);
+    }
+
+    h1 {
+      text-align: center;
+      color: #0ea5a4;
+      margin-bottom: 24px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .box {
+      padding: 16px;
+      margin: 14px 0;
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .box:hover { transform: translateY(-3px); }
+
+    p { color: green; }
+    .override p { color: blue; }
+    #highest p { color: red; }
+
+    a[target="_blank"] { color: purple; }
+    input[type="email"] {
+      border: 2px solid #0ea5a4;
+      padding: 6px;
+      border-radius: 6px;
+    }
+
+    .quote::before { content: "❝ "; color: #555; }
+    .quote::after { content: " ❞"; color: #555; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Selectors Practice</h1>
+    <section class="box">
+      <h2>Specificity</h2>
+      <div class="override" id="highest">
+        <p>This paragraph color is set by multiple selectors. ID wins → should be red.</p>
+      </div>
+    </section>
+
+    <section class="box">
+      <h2>Attribute Selectors</h2>
+      <a href="https://en.wikipedia.org" target="_blank">Wikipedia</a><br><br>
+      <input type="email" placeholder="email@example.com">
+    </section>
+
+    <section class="box">
+      <h2>Pseudo-elements & Classes</h2>
+      <p class="quote">This is a quoted phrase with before and after text.</p>
+    </section>
+  </main>
+</body>
+</html>
